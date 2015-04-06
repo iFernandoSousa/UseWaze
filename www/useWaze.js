@@ -42,7 +42,6 @@ UseWaze.prototype.centerOnMap = function (latitude, longitude, zoom) {
 	}
 		
 	cordova.exec(null, null, "UseWaze", "centerOnMap", [latitude, longitude, zoom]);
-	}
 };
 
 /*
