@@ -39,4 +39,4 @@ And you can set the zoom you want, the default zoom is 6
 
 You can navigate to specific latitude and longitude:
 
-    UseWaze.centerOnMap(-23.5626773,-46.6551163, 10);
+    UseWaze.navigateTo(-23.5626773,-46.6551163);
