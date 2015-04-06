@@ -56,11 +56,11 @@ public class UseWaze extends CordovaPlugin {
             return true;
         }
 		else if ("centerOnMap".equals(action)) {            
-            callWaze("waze://?ll=" + args.getString(0) + "," + args.getString(1) + "&z=" + args.getString(2))
+            callWaze("waze://?ll=" + args.getString(0) + "," + args.getString(1) + "&z=" + args.getString(2));
             return true;
         }
 		else if ("navigateTo".equals(action)) {
-            callWaze("waze://?ll=" + args.getString(0) + "," + args.getString(1) + "&navigate=yes")
+            callWaze("waze://?ll=" + args.getString(0) + "," + args.getString(1) + "&navigate=yes");
             return true;
         }
 
