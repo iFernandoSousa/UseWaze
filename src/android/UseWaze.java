@@ -93,12 +93,12 @@ public class UseWaze extends CordovaPlugin {
 				}
 				catch (ActivityNotFoundException ex)
 				{
-					url = "market://details?id=com.waze";
+					String urlMarket = "market://details?id=com.waze";
 					Intent intent = null;
 					intent = new Intent(Intent.ACTION_VIEW);
 					// Omitting the MIME type for file: URLs causes "No Activity found to handle Intent".
 					// Adding the MIME type to http: URLs causes them to not be handled by the downloader.
-					Uri uri = Uri.parse(url);
+					Uri uri = Uri.parse(urlMarket);
 					if ("file".equals(uri.getScheme())) {
 						intent.setDataAndType(uri, webView.getResourceApi().getMimeType(uri));
 					} else {
