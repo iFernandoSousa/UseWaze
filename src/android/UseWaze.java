@@ -19,7 +19,6 @@
 */
 package br.com.hotforms;
 
-import android.util.Log;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -27,11 +26,18 @@ import android.content.ActivityNotFoundException;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.util.Log;
+import android.view.Window;
+import android.view.WindowManager;
+
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaInterface;
 import org.apache.cordova.Config;
 import org.apache.cordova.CordovaArgs;
 import org.apache.cordova.CordovaPlugin;
+import org.apache.cordova.CordovaWebView;
+import org.apache.cordova.PluginResult;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
