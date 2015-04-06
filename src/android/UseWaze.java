@@ -67,7 +67,7 @@ public class UseWaze extends CordovaPlugin {
         return false;
     }
 
-    private void callWaze(String final url) {
+    private void callWaze(final String url) {
 		this.cordova.getActivity().runOnUiThread(new Runnable() {
 			@Override
 			public void run() {
