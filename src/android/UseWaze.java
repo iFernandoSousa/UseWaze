@@ -72,7 +72,8 @@ public class UseWaze extends CordovaPlugin {
     }
 
     private void callWaze(final String url) {
-		this.cordova.getActivity().runOnUiThread(new Runnable() {
+		final Activity activity = tithis.cordova.getActivity();
+		activity.runOnUiThread(new Runnable() {
 			@Override
 			public void run() {
 				try
@@ -88,7 +89,7 @@ public class UseWaze extends CordovaPlugin {
 						intent.setData(uri);
 					}
 
-					this.cordova.getActivity().startActivity(intent);
+					activity.startActivity(intent);
 				}
 				catch (ActivityNotFoundException ex)
 				{
@@ -104,7 +105,7 @@ public class UseWaze extends CordovaPlugin {
 						intent.setData(uri);
 					}
 						
-					this.cordova.getActivity().startActivity(intent);
+					activity.startActivity(intent);
 				}
 			}
 		});
