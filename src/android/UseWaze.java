@@ -48,10 +48,8 @@ public class UseWaze extends CordovaPlugin {
     @Override
     public boolean execute(String action, CordovaArgs args, final CallbackContext callbackContext) throws JSONException {
         Log.v(TAG, "Executing action: " + action);
-        final Activity activity = this.cordova.getActivity();
-        final Window window = activity.getWindow();
         
-		if ("search".equals(action)) {            
+	if ("search".equals(action)) {            
             callWaze("waze://?q=" + args.getString(0));
             return true;
         }
