@@ -17,7 +17,7 @@
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="UseWaze">
-                <param name="android-package" value="br.com.hotforms.UseWaze" />
+                <param name="android-package" value="br.com.hotforms.usewaze.UseWaze" />
             </feature>
         </config-file>
         <source-file src="src/android/UseWaze.java" target-dir="src/br/com/hotforms/usewaze" />
